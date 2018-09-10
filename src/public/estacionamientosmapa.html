@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Talleres - Sitios</title>
+    <style>      
+      #map {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+      }
+      html, body {
+        background: black;
+        padding: 30px;
+        height: 80%;
+        position: center;
+      }
+    </style>
+  </head>
+
+ <body>
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          /*distancia que tendra la visualizacion del mapa*/
+          zoom: 13,
+          /*Cordenadas de */
+          center: {lat: -4.010507, lng: -79.193401},
+          mapTypeId: 'roadmap'
+        });
+        
+        var imagentaller = 'img/estacionamiento_3.png';
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -3.973673, lng: -79.20277},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Jipiro'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -4.005512 , lng: -79.20469},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Coliseo-Ciudad de Loja'
+          });
+          var marker14 = new google.maps.Marker({
+             position: {lat: -3.995769, lng:-79.201974},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Municipio de Loja'
+          });
+          var marker14 = new google.maps.Marker({
+             position: {lat: -4.012658, lng: -79.202391},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Supermaxi'
+          });
+           var marker14 = new google.maps.Marker({
+             position: {lat: -4.000992, lng: -79.196531},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Estadio Reina del Cisne'
+          });
+           var marker14 = new google.maps.Marker({
+             position: {lat: -3.980925, lng: -79.202344},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Cinemas'
+          });
+           var marker14 = new google.maps.Marker({
+             position: {lat: -4.03294, lng: -79.202548},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'UNL'
+          });
+           var marker14 = new google.maps.Marker({
+             position: {lat:-3.986957, lng:-79.199337},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'UTPL'
+          });
+
+
+      }
+    </script> 
+
+    <script async defe
+    /*archivo javascrip que carga todos los simbolos y definiciones que necesita para usar la API  JavaScrip de Maps*/
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkKiwHZLMchHVZq-LVd3Y0ngPsch_X6gM&callback=initMap">
+    </script>
+
+  </body>
+</html>

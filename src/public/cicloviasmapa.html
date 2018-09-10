@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Talleres - Sitios</title>
+    <style>      
+      #map {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+      }
+      html, body {
+        background: black;
+        padding: 30px;
+        height: 80%;
+        position: center;
+      }
+    </style>
+  </head>
+
+ <body>
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          /*distancia que tendra la visualizacion del mapa*/
+          zoom: 15,
+          /*Cordenadas de */
+          center: {lat: -4.010507, lng: -79.193401},
+          mapTypeId: 'roadmap'
+        });
+        
+        var imagentaller = 'img/bicicleta.png';
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -3.973673, lng: -79.20277},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'Jipiro'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -4.012722, lng:-79.202808},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '18 N'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -4.005676, lng:-79.203356},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '18 N'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -4.001533, lng:-79.203673},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '18 N'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat: -3.994515, lng:-79.204294},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '18 N'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat:-4.002064, lng:-79.197641},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '24 M'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat:-4.000139, lng:-79.197838},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '24 M'
+          });
+
+          var marker14 = new google.maps.Marker({
+             position: {lat:-3.998524, lng: -79.197996},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '24 M'
+          });
+
+           var marker14 = new google.maps.Marker({
+             position: {lat:-3.995546 , lng:-79.198275},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: '24 M'
+          });
+
+
+            var marker14 = new google.maps.Marker({
+             position: {lat:-3.981458, lng:-79.202671},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'O Z'
+          });
+            var marker14 = new google.maps.Marker({
+             position: {lat:-3.982306, lng: -79.202654},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'O Z'
+          });
+            var marker14 = new google.maps.Marker({
+             position: {lat:-3.98332, lng:-79.202422},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'O Z'
+          });
+            var marker14 = new google.maps.Marker({
+             position: {lat:-3.984041, lng:-79.202206},
+             map: map,
+             icon:imagentaller,
+             animation: google.maps.Animation.DROP,
+             title: 'O Z'
+          });
+
+
+
+
+
+
+
+
+
+
+      }
+    </script> 
+
+    <script async defe
+    /*archivo javascrip que carga todos los simbolos y definiciones que necesita para usar la API  JavaScrip de Maps*/
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkKiwHZLMchHVZq-LVd3Y0ngPsch_X6gM&callback=initMap">
+    </script>
+
+  </body>
+</html>
